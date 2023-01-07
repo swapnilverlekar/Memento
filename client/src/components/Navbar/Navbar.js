@@ -2,8 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import { AppBar, Avatar, Button, Toolbar, Typography } from '@material-ui/core'
 import useStyles from './styles'
-import mementoLogo from "../../images/Memento.png";
-import giphy from "../../images/giphy.gif";
+import memories from "../../images/memories.png";
 import { useDispatch } from 'react-redux';
 import decode from 'jwt-decode';
 import * as actionType from '../../constants/actionTypes';
@@ -38,10 +37,10 @@ export const Navbar = () => {
     return (
         <div>
             <AppBar className={classes.appBar} position="static" color="inherit">
-                <Link tp='/' className={classes.brandContainer}>
-                    <img src={mementoLogo} alt="icon" height="60px" />
-                    <img className={classes.image} src={giphy} alt="memento" height="40" />
-                </Link>
+                <div className={classes.brandContainer}>
+                    <Typography component={Link} to="/" className={classes.heading} variant="h2" algihn="center">Memories</Typography>
+                    <img className={classes.image} src={memories} alt="memories" height="60" />
+                </div>
                 <Toolbar className={classes.toolbar}>
                     {user?.result ? (
                         <div className={classes.profile}>
