@@ -89,7 +89,7 @@ https://user-images.githubusercontent.com/48671736/211172082-d30998bf-f82b-4dca-
 Swapnil Verlekar : https://github.com/swapnilverlekar <br>
 Anurag Bambardekar : https://github.com/AnuragBambardekar <br>
 
-#### Resources
+### Resources
 
 https://reactjs.org/docs/getting-started.html <br>
 https://www.mongodb.com/atlas/database <br>
